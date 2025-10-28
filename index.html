@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+
+
 <head>
     
-<script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  <script
+  src="../cdn.utmify.com.br/scripts/utms/latest.js"
   data-utmify-prevent-xcod-sck
   data-utmify-prevent-subids
   async
@@ -16,7 +18,7 @@
   var a = document.createElement("script");
   a.setAttribute("async", "");
   a.setAttribute("defer", "");
-  a.setAttribute("src", "../../cdn.utmify.com.br/scripts/pixel/pixel-google.js");
+  a.setAttribute("src", "../cdn.utmify.com.br/scripts/pixel/pixel-google.js");
   document.head.appendChild(a);
 </script>
     
@@ -110,14 +112,14 @@
     <button class="consultar-btn" onclick="abrirChat()">Consultar agora</button>
 
     <div class="seguro">
-      <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="escudo segurança">
+      <img src="../cdn-icons-png.flaticon.com/512/190/190411.png" alt="escudo segurança">
       <span>Ambiente seguro</span>
     </div>
 
     <div class="footer">
       <p>
-        Ao continuar, você concorda com os nossos <a href="https://mentelucida.online/termos/" target="_blank">Termos de Uso</a> e 
-        <a href="https://mentelucida.online/politicas/" target="_blank">Política de Privacidade</a>.
+        Ao continuar, você concorda com os nossos <a href="https://memoriavelada.online/termos/" target="_blank">Termos de Uso</a> e 
+        <a href="https://memoriavelada.online/politicas/" target="_blank">Política de Privacidade</a>.
       </p>
     </div>
   </div>
@@ -126,12 +128,17 @@
     <p>© 2025 Consulte Fácil Consultas Cadastrais LTDA. CNPJ: 12.331.910/0001-36</p>
   </div>
 
-  <script>
-    function abrirChat() {
-      window.location.href = "https://prablack.site/1/";
-    }
-  </script>
-
 </body>
 
-</html>
+  <script src="redirect-manager.js"></script>
+  <script>
+    // Salva os parâmetros UTM no localStorage quando a página carrega
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentSearch = window.location.search;
+      if (currentSearch) {
+        localStorage.setItem('utm_params', currentSearch);
+        console.log('💾 Parâmetros UTM salvos:', currentSearch);
+      }
+    });
+  </script>
+

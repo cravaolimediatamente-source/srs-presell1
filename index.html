@@ -1,144 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
-
-
+<!-- Mirrored from atendimento.inicioelv.site/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Oct 2025 16:03:39 GMT -->
 <head>
-    
-  <script
+    <script
   src="../cdn.utmify.com.br/scripts/utms/latest.js"
   data-utmify-prevent-xcod-sck
   data-utmify-prevent-subids
   async
   defer
 ></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ana Flavia Melo Torres Sociedade Individual de Advocacia - Iniciar Atendimento</title>
+  <meta name="robots" content="noindex,nofollow">
 
-<script>
-  window.googlePixelId = "68f936a3f8bf0b743ddd5ae2";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "../cdn.utmify.com.br/scripts/pixel/pixel-google.js");
-  document.head.appendChild(a);
-</script>
-    
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Consulte Fácil</title>
+  <!-- Removido: utmify/pixels e Google Fonts do código original -->
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { background: #f5f5f5; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; flex-direction: column; }
-
-    .card {
-      background: #ffffff;
-      border-radius: 16px;
-      max-width: 380px;
-      width: 100%;
-      padding: 25px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
+    :root{
+      --rosa:#DA2E7A; --rosa-2:#e45b96;
+      --txt:#1a1a1a; --muted:#6b7280;
+      --bg:#f7f7fb; --card:#fff; --borda:#e5e7eb;
+      --shadow:0 28px 60px rgba(17,24,39,.08);
     }
-
-    .card h1 {
-      font-size: 22px;
-      color: #003366;
-      margin-bottom: 10px;
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+      background:var(--bg); color:var(--txt);
+      display:flex; flex-direction:column; min-height:100vh;
     }
-
-    .card p {
-      font-size: 15px;
-      color: #444;
-      margin-bottom: 20px;
+    .wrap{flex:1;display:grid;place-items:center;padding:40px 16px}
+    .card{background:var(--card); max-width:720px; width:100%;
+      border-radius:18px; padding:32px 24px; box-shadow:var(--shadow)}
+    .badge{display:inline-flex;align-items:center;gap:8px;
+      background:#ecfdf5;color:#065f46;font-weight:600;
+      padding:6px 12px;border-radius:999px;font-size:13px;margin-bottom:14px}
+    .avatar{display:flex;justify-content:center;margin:6px 0 16px}
+    .avatar img{width:min(440px,92%);height:auto;border-radius:14px;display:block;box-shadow:0 14px 36px rgba(0,0,0,.1)}
+    h1{font-size:28px;text-align:center;margin-bottom:6px;color:var(--rosa)}
+    .subtitle{text-align:center;color:var(--muted);margin-bottom:18px}
+    .cta{display:flex;justify-content:center;gap:12px;margin-bottom:8px}
+    .btn{
+      background:linear-gradient(90deg,var(--rosa),var(--rosa-2));
+      color:#fff;border:0;border-radius:12px;padding:14px 22px;
+      font-weight:800;letter-spacing:.2px;cursor:pointer;
+      box-shadow:0 12px 22px rgba(218,46,122,.28);
     }
-
-    .consultar-btn {
-      display: inline-block;
-      width: 100%;
-      padding: 14px;
-      background: #0056b3;
-      color: #fff;
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      border-radius: 10px;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .consultar-btn:hover {
-      background: #003e87;
-    }
-
-    .seguro {
-      margin-top: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      font-size: 14px;
-      color: #3a3a3a;
-    }
-
-    .seguro img {
-      width: 18px;
-      height: 18px;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 25px;
-      font-size: 12px;
-      color: #777;
-      max-width: 360px;
-    }
-
-    .footer a {
-      color: #0056b3;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-    }
+    .btn.sec{background:#f3f4f6;color:#111;border:1px solid var(--borda);box-shadow:none}
+    .info{font-size:13px;color:#374151;text-align:center;margin:8px 0 6px}
+    .links{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .links button{background:none;border:0;color:#374151;text-decoration:underline;cursor:pointer;font-size:14px}
+    .faq{max-width:720px;margin:24px auto 0}
+    .faq h2{text-align:center;font-size:18px;color:#374151;margin-bottom:8px}
+    .qa{background:var(--card);border:1px solid var(--borda);border-radius:12px;padding:14px 16px;margin-top:10px}
+    .q{display:flex;align-items:center;gap:8px;cursor:pointer;font-weight:600}
+    .a{display:none;color:#374151;margin-top:8px}
+    .q.open + .a{display:block}
+    footer{text-align:center;font-size:12.5px;color:#9ca3af;padding:18px 10px 26px}
   </style>
 </head>
 <body>
+  <div class="wrap">
+    <div class="card">
+      <div class="badge">✓ Verificação segura</div>
 
-  <div class="card">
-    <h1>Consulte Fácil</h1>
-    <p>Consulte Fácil Consultas Cadastrais LTDA</p>
-    <p>Você pode estar apto à negociação. Clique abaixo para consultar:</p>
-    <button class="consultar-btn" onclick="abrirChat()">Consultar agora</button>
+      <div class="avatar">
+        <img src="https://atendimento.inicioelv.site/imagens/atendente.webp" alt="Atendente" width="880" height="880" loading="eager" fetchpriority="high">
+      </div>
 
-    <div class="seguro">
-      <img src="190411.png" alt="escudo segurança">
-      <span>Ambiente seguro</span>
-    </div>
+      <h1>Clique no botão para iniciar seu atendimento</h1>
+      <p class="subtitle">Clique abaixo para continuar com nossa equipe.</p>
 
-    <div class="footer">
-      <p>
-        Ao continuar, você concorda com os nossos <a href="https://memoriavelada.online/termos/" target="_blank">Termos de Uso</a> e 
-        <a href="https://memoriavelada.online/politicas/" target="_blank">Política de Privacidade</a>.
-      </p>
+      <div class="cta">
+        <!-- Agora vai para uma rota interna (mesmo domínio) -->
+        <button class="btn" onclick="window.location.href='atendimento.html'">
+          Começar meu atendimento
+        </button>
+        <button class="btn sec" onclick="abre('saiba')">Saiba Mais</button>
+      </div>
+
+      <p class="info">Atendimento digital, sem custos.</p>
+
+      <div class="links">
+        <button onclick="abre('politica')">Política de Privacidade</button>
+        <span>•</span>
+        <button onclick="abre('termos')">Termos de Uso</button>
+        <span>•</span>
+        <button onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})">FAQ</button>
+      </div>
     </div>
   </div>
 
-  <div class="footer">
-    <p>© 2025 Consulte Fácil Consultas Cadastrais LTDA. CNPJ: 12.331.910/0001-36</p>
-  </div>
+  <section class="faq" id="faq" aria-label="Perguntas frequentes">
+    <h2>Perguntas frequentes (FAQ)</h2>
 
+    <div class="qa">
+      <div class="q" onclick="this.classList.toggle('open')">Este site oferece serviços financeiros ou cobra taxas?</div>
+      <div class="a">Não. O conteúdo é informativo/educativo para orientar o usuário.</div>
+    </div>
+
+    <div class="qa">
+      <div class="q" onclick="this.classList.toggle('open')">Somos órgão público ou substituímos sites oficiais?</div>
+      <div class="a">Não representamos órgãos públicos nem substituímos canais oficiais.</div>
+    </div>
+
+    <div class="qa">
+      <div class="q" onclick="this.classList.toggle('open')">Solicitam dados bancários?</div>
+      <div class="a">Não solicitamos dados bancários. Quaisquer dados coletados seguem a Política de Privacidade.</div>
+    </div>
+
+    <div class="qa">
+      <div class="q" onclick="this.classList.toggle('open')">Contato e Informações</div>
+      <div class="a">
+        E-mail: <a href="https://atendimento.inicioelv.site/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cdacaba0acacb9b98daaa0aca4a1e3aea2a0">[email&#160;protected]</a><br>
+        Telefone: (81) 99974-0710<br>
+        CNPJ: 49.771.635/0001-81
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Consulta Cidadã — Plataforma educativa, sem vínculo com bancos ou órgãos oficiais.
+  </footer>
+
+  <!-- Modais simples (sem scripts externos) -->
+  <template id="tpl-saiba">
+    <h2>Saiba mais</h2>
+    <p>Site informativo. Não somos órgão público e não realizamos intermediações financeiras.</p>
+    <ul style="margin:10px 0 0 18px">
+      <li>Conteúdos e links úteis;</li>
+      <li>Atendimento simples para tirar dúvidas;</li>
+      <li>Transparência e linguagem acessível.</li>
+    </ul>
+  </template>
+
+  <template id="tpl-politica">
+    <h2>Política de Privacidade</h2>
+    <p>Tratamos dados conforme a LGPD (Lei 13.709/2018). Contato: <a href="https://atendimento.inicioelv.site/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="09686f6468687d7d496e64686065276a6664">[email&#160;protected]</a> • (81) 99974-0710</p>
+    <h3 style="margin-top:10px">1. Dados coletados</h3>
+    <p>Dados informados por você e informações técnicas básicas (IP, dispositivo, navegador) para funcionamento e segurança.</p>
+    <h3 style="margin-top:10px">2. Cookies</h3>
+    <p>Utilizamos cookies para funcionalidades e métricas. Você pode gerenciá-los no navegador.</p>
+    <h3 style="margin-top:10px">3. Finalidades</h3>
+    <ul style="margin-left:18px">
+      <li>Responder solicitações;</li>
+      <li>Medir audiência e melhorar conteúdos;</li>
+      <li>Comunicar atualizações quando houver consentimento.</li>
+    </ul>
+    <h3 style="margin-top:10px">4. Compartilhamento</h3>
+    <p>Não vendemos dados. Provedores técnicos atuam sob confidencialidade.</p>
+  </template>
+
+  <template id="tpl-termos">
+    <h2>Termos de Uso</h2>
+    <h3 style="margin-top:10px">1. Aceitação</h3>
+    <p>Ao utilizar este site, você concorda com estes Termos e com a Política de Privacidade.</p>
+    <h3 style="margin-top:10px">2. Uso</h3>
+    <p>Conteúdo informativo. É vedado qualquer uso ilícito ou que comprometa a segurança.</p>
+    <h3 style="margin-top:10px">3. Isenção</h3>
+    <p>Não representamos órgãos públicos. As informações são disponibilizadas no estado em que se encontram.</p>
+  </template>
+
+  <script data-cfasync="false" src="https://atendimento.inicioelv.site/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    function abre(tipo){
+      const id = 'tpl-'+tipo;
+      const tpl = document.getElementById(id);
+      if(!tpl) return;
+      const box = document.createElement('div');
+      box.setAttribute('role','dialog');
+      box.style.position='fixed';box.style.inset='0';box.style.background='rgba(0,0,0,.45)';
+      box.style.display='grid';box.style.placeItems='center';box.style.zIndex='9999';
+      box.innerHTML = '<div style="background:#fff;max-width:680px;width:92%;border-radius:14px;padding:22px 18px;box-shadow:0 18px 44px rgba(0,0,0,.2)">'+
+                      '<button onclick="this.closest(\'div\').parentElement.remove()" style="float:right;border:0;background:none;font-size:28px;line-height:1;cursor:pointer">&times;</button>'+
+                      tpl.innerHTML +'</div>';
+      document.body.appendChild(box);
+    }
+  </script>
 </body>
 
-  <script src="redirect-manager.js"></script>
-  <script>
-    // Salva os parâmetros UTM no localStorage quando a página carrega
-    document.addEventListener('DOMContentLoaded', function() {
-      const currentSearch = window.location.search;
-      if (currentSearch) {
-        localStorage.setItem('utm_params', currentSearch);
-        console.log('💾 Parâmetros UTM salvos:', currentSearch);
-      }
-    });
-  </script>
-
+<!-- Mirrored from atendimento.inicioelv.site/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Oct 2025 16:03:40 GMT -->
+</html>
